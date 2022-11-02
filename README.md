@@ -1,5 +1,7 @@
 ### IDA 7.5 Demo on Linux
 
+![banner](banner.png)
+
 This repository contains scripts to make leaked IDA 7.5 demo work on linux, tested on Ubuntu 22.04
 
 You can find IDA 7.5 Demo installer on
