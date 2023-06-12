@@ -24,6 +24,9 @@ patch(ida64.add(0x1ABBE8), [0x90, 0x90, 0x90, 0x90, 0x90, 0x90]);
 patch(ida64.add(0x170815), [0x90, 0x90]);
 patch(ida64.add(0x17081E), [0x90, 0xe9]);
 
+/// Thank you for using our demo version (annoying message popping up every 10 minutes)
+patch(ida64.add(0x1C8C98), [0x74, 0x26, 0x48, 0x8B, 0x44, 0x24]);
+
 recv("input", function (message) {
     /// Sorry, you reached the limit of the decompilation attempts
     var hexx64 = Module.load(message.hexx64).base;
